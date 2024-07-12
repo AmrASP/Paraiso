@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.home .container {
+  width: 92%;
+  padding: 0px;
+  margin: 5vh auto 0px;
+  box-shadow: 0px 0px 10px 3px rgb(192, 192, 192);
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-image: url("../images/leaves.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.home .container .overLay {
+  width: 100%;
+  padding: 10% 0px;
+  position: absolute;
+  inset: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home .container .overLay .title {
+  text-align: center;
+}
+
+.home .container .overLay .title h1 {
+  font-size: 120px;
+  margin: 20px 0px 10px;
+}
+
+.home .container .overLay .title h3 {
+  font-size: 50px;
+  color: hsl(98, 36%, 27%);
+  margin-top: 15px;
+}
+.home .linksBotton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.home .linksBotton > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  animation: upDown 1.7s linear infinite;
+  -webkit-animation: upDown 1.7s linear infinite;
+  width: 20%;
+}
+
+.home .linksBotton > a:first-child {
+  background-image: linear-gradient(50deg, #6dad86 10%, #385a2a 100%);
+}
+
+.home .linksBotton > a:last-child {
+  background-image: linear-gradient(200deg, #6dad86 10%, #385a2a 100%);
+}
+
+.home .linksBotton > a div {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 1px 5px rgb(31, 31, 31), 0 0 25px hsl(97, 18%, 69%);
+}
+.home .linksBotton > a i {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 45px;
+  text-shadow: 1px 1px 10px rgb(36, 36, 36), 0 0 25px hsl(97, 18%, 69%);
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+  }
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .home .container {
+    margin-top: 20px;
+  }
+  .home .container .overLay .title h1 {
+    font-size: 100px;
+    margin: 20px 0px;
+  }
+
+  .home .container .overLay .title h3 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .container .overLay .title h1 {
+    font-size: 60px;
+    margin: 20px 0px;
+  }
+
+  .home .container .overLay .title h3 {
+    font-size: 30px;
+  }
+  .home .linksBotton > a {
+    width: 40% !important;
+  }
+  .home .linksBotton > a div {
+    font-size: 20px;
+  }
+  .home .linksBotton > a i {
+    font-size: 25px !important;
+  }
+}
