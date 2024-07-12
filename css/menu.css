@@ -92,6 +92,7 @@ body {
 
 .tableContainer {
   padding: 20px 25px;
+  min-height: 90vh;
   width: 100%;
   padding-bottom: 20px;
   background-image: url("../images/cement-texture_1194-5802.jpg");
@@ -128,7 +129,7 @@ body {
 }
 
 .tableContainer img {
-  width: 250px;
+  width: 280px;
 }
 
 .cardContainer {
@@ -320,7 +321,7 @@ body {
   font-size: 40px;
   color: #304623;
   font-weight: bold;
-text-align: center;
+  text-align: center;
 }
 
 .socialCard .socialLinks {
@@ -330,7 +331,6 @@ text-align: center;
   gap: 20px;
   animation: upDown 1.7s linear infinite;
   -webkit-animation: upDown 1.7s linear infinite;
-
 }
 
 .socialCard .socialLinks a {
@@ -338,9 +338,9 @@ text-align: center;
   cursor: pointer;
 }
 
-.socialCard .socialLinks a i{
- font-size: 80px;
- color: #3e5e2c;
+.socialCard .socialLinks a i {
+  font-size: 80px;
+  color: #3e5e2c;
 }
 
 .groupName {
@@ -385,7 +385,6 @@ text-align: center;
   }
 }
 
-
 @media (max-width: 991px) {
   .container {
     width: 100%;
@@ -399,7 +398,7 @@ text-align: center;
   }
 
   .tableContainer img {
-    width: 250px;
+    width: 280px;
   }
 
   .swiper {
@@ -417,12 +416,12 @@ text-align: center;
 
 @media (max-width: 767px) {
   .tableContainer .photoContainer h1 {
-    font-size: 33px;
+    font-size: 31px;
     font-weight: bold;
   }
 
   .tableContainer img {
-    width: 130px;
+    width: 160px;
   }
   .cardContainer {
     padding: 0px;
@@ -438,7 +437,7 @@ text-align: center;
     font-size: 14px;
     color: rgb(80, 80, 80);
   }
-  .socialCard span  {
+  .socialCard span {
     font-size: 30px;
   }
 }
