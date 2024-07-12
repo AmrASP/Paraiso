@@ -16,20 +16,20 @@ async function getData() {
     {
       group: "Espresso",
       name: "Espresso",
-      imgUrl: "./images/iceCreem.png",
+      imgUrl: "./images/tea.png",
       pageNum: 1,
     },
 
     {
       group: "Hot Coffe",
       name: "Hot Coffe",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/tea.png",
       pageNum: 2,
     },
     {
       group: "Hot Drink's",
       name: "Hot Drink's",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/tea.png",
       pageNum: 3,
     },
     {
@@ -41,7 +41,7 @@ async function getData() {
     {
       group: "Fresh Juice",
       name: "Fresh Juice",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/cold.png",
       pageNum: 5,
     },
     {
@@ -53,7 +53,7 @@ async function getData() {
     {
       group: "Smothie",
       name: "Smothie",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/cold.png",
       pageNum: 7,
     },
     {
@@ -65,7 +65,7 @@ async function getData() {
     {
       group: "Milk Shake ",
       name: "Milk Shake ",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/Milk Shake.png",
       pageNum: 9,
     },
     {
@@ -101,25 +101,25 @@ async function getData() {
     {
       group: "Fruite Salad",
       name: "Fruite Salad",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/fruit salad.png",
       pageNum: 14,
     },
     {
       group: "Waffel's",
       name: "Waffel's",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/waffel.png",
       pageNum: 15,
     },
     {
       group: "Pan Cake",
       name: "Pan Cake",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/pan cacke.png",
       pageNum: 16,
     },
     {
       group: "Dessert",
       name: "Dessert",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/Dessert.png",
       pageNum: 17,
     },
     {
@@ -131,7 +131,7 @@ async function getData() {
     {
       group: "Ice Cream",
       name: "Ice Cream",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/iceCreem.png",
       pageNum: 19,
     },
     {
@@ -140,16 +140,12 @@ async function getData() {
       imgUrl: "./images/drinks.png",
       pageNum: 20,
     },
-   
   ];
 
   let htmlTagsContainer = "";
 
   for (const { group, name, imgUrl, pageNum } of categories) {
-    const items = allData.Sheet1.filter(
-      (element) =>
-        element.group === group
-    );
+    const items = allData.Sheet1.filter((element) => element.group === group);
 
     const itemRows = items.map(
       (element) => `
@@ -218,7 +214,7 @@ async function getData() {
       `;
   }
 
-  const socialMedia =  `  <div class="swiper-slide">
+  const socialMedia = `  <div class="swiper-slide">
   <div class="swipContainer">
     <div class="tableContainer socialCard">
      <a href="./index.html" id="backToHome"

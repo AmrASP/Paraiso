@@ -16,19 +16,19 @@ async function getData() {
     {
       group: "السندوتشات",
       name: "السندوتشات",
-      imgUrl: "./images/Vip.png",
+      imgUrl: "./images/sandwich.png",
       pageNum: 1,
     },
     {
       group: "برجر الفراخ ",
       name: "برجر الفراخ ",
-      imgUrl: "./images/Appetizers.png",
+      imgUrl: "./images/checkn burger.png",
       pageNum: 2,
     },
     {
       group: "برجر اللحم ",
       name: "برجر اللحم",
-      imgUrl: "./images/Appetizers.png",
+      imgUrl: "./images/beef burger.png",
       pageNum: 3,
     },
     {
@@ -40,37 +40,37 @@ async function getData() {
     {
       group: "وجبات الاطفال ",
       name: "وجبات الاطفال",
-      imgUrl: "./images/Additions.png",
+      imgUrl: "./images/chiledern.png",
       pageNum: 5,
     },
     {
       group: "الشوربة ",
       name: "الشوربة",
-      imgUrl: "./images/Additions.png",
+      imgUrl: "./images/soup.png",
       pageNum: 6,
     },
     {
       group: "الباستا",
       name: "الباستا",
-      imgUrl: "./images/eastFood.png",
+      imgUrl: "./images/pasta.png",
       pageNum: 7,
     },
     {
       group: "السلطات ",
       name: "السلطات",
-      imgUrl: "./images/eastFood.png",
+      imgUrl: "./images/salad.png",
       pageNum: 8,
     },
     {
       group: "الاطباق ",
       name: "الاطباق",
-      imgUrl: "./images/eastFood.png",
+      imgUrl: "./images/dishes.png",
       pageNum: 9,
     },
     {
       group: "البيتزا ",
       name: "البيتزا",
-      imgUrl: "./images/eastFood.png",
+      imgUrl: "./images/pizza.png",
       pageNum: 10,
     },
   ];
@@ -78,10 +78,7 @@ async function getData() {
   let htmlTagsContainer = "";
 
   for (const { group, name, imgUrl, pageNum } of categories) {
-    const items = allData.Sheet1.filter(
-      (element) =>
-        element.group === group 
-    );
+    const items = allData.Sheet1.filter((element) => element.group === group);
 
     const itemRows = items.map(
       (element) => `
@@ -143,7 +140,7 @@ async function getData() {
     `;
   }
 
-  const socialMedia =  `  <div class="swiper-slide">
+  const socialMedia = `  <div class="swiper-slide">
   <div class="swipContainer">
     <div class="tableContainer socialCard">
      <a href="./index.html" id="backToHome"
