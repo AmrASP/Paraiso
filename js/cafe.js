@@ -16,26 +16,26 @@ async function getData() {
     {
       group: "Espresso",
       name: "Espresso",
-      imgUrl: "./images/tea.png",
+      imgUrl: "./images/Espresso.png",
       pageNum: 1,
     },
 
     {
       group: "Hot Coffe",
       name: "Hot Coffe",
-      imgUrl: "./images/tea.png",
+      imgUrl: "./images/Hot Coffe.png",
       pageNum: 2,
     },
     {
       group: "Hot Drink's",
       name: "Hot Drink's",
-      imgUrl: "./images/tea.png",
+      imgUrl: "./images/Hot Drink's.png",
       pageNum: 3,
     },
     {
       group: " Juice Cocktail ",
       name: "Juice Cocktail",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/Juice Cocktail.png",
       pageNum: 4,
     },
     {
@@ -53,13 +53,13 @@ async function getData() {
     {
       group: "Smothie",
       name: "Smothie",
-      imgUrl: "./images/cold.png",
+      imgUrl: "./images/Smothie.png",
       pageNum: 7,
     },
     {
       group: "Yogurt",
       name: "Yogurt",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/Yogurt.png",
       pageNum: 8,
     },
     {
@@ -77,25 +77,25 @@ async function getData() {
     {
       group: "Iced Frappe",
       name: "Iced Frappe",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/Iced Frappe.png",
       pageNum: 10,
     },
     {
       group: "Iced Coffe",
       name: "Iced Coffe",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/Iced Coffe.png",
       pageNum: 11,
     },
     {
       group: "Iced Frappaccino",
       name: "Iced Frappaccino",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/Iced Frappe.png",
       pageNum: 12,
     },
     {
       group: "Madnes",
       name: "Madnes",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/Madnes.png",
       pageNum: 13,
     },
     {
@@ -125,7 +125,7 @@ async function getData() {
     {
       group: "Om Ali",
       name: "Om Ali",
-      imgUrl: "./images/drinks.png",
+      imgUrl: "./images/om Ali.png",
       pageNum: 18,
     },
     {
