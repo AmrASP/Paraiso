@@ -291,6 +291,7 @@ body {
 }
 .cardContainer .title {
   width: 100%;
+ flex-direction: row-reverse;
   display: flex;
   justify-content: space-between;
   align-items: center;
