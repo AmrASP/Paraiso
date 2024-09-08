@@ -16,7 +16,7 @@ async function getData() {
     {
       group: "Espresso",
       name: "Espresso",
-      imgUrl: "./images/Espresso.png",
+      imgUrl: "",
       pageNum: 1,
     },
 
