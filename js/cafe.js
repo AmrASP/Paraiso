@@ -29,7 +29,7 @@ async function getData() {
     {
       group: "Hot Drink's",
       name: "Hot Drink's",
-      imgUrl: "./images/Hot Drink's.png",
+      imgUrl: "",
       pageNum: 3,
     },
     {
