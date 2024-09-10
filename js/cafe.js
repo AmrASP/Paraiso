@@ -1,7 +1,12 @@
 async function fetchData() {
-  let req = await fetch("../data/coffeeData.json");
-  let res = await req.json();
-  return res;
+  try {
+    const req = await fetch("../data/coffeeData.json");
+    const res = await req.json();
+    return res;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    // Handle the error gracefully (e.g., display an error message to the user)
+  }
 }
 
 async function getData() {
@@ -16,26 +21,26 @@ async function getData() {
     {
       group: "Espresso",
       name: "Espresso",
-      imgUrl: "",
+      imgUrl: "./images/tea.png",
       pageNum: 1,
     },
 
     {
       group: "Hot Coffe",
       name: "Hot Coffe",
-      imgUrl: "./images/Hot Coffe.png",
+      imgUrl: "./images/tea.png",
       pageNum: 2,
     },
     {
       group: "Hot Drink's",
       name: "Hot Drink's",
-      imgUrl: "",
+      imgUrl: "./images/tea.png",
       pageNum: 3,
     },
     {
       group: " Juice Cocktail ",
       name: "Juice Cocktail",
-      imgUrl: "./images/Juice Cocktail.png",
+      imgUrl: "./images/drinks.png",
       pageNum: 4,
     },
     {
@@ -53,13 +58,13 @@ async function getData() {
     {
       group: "Smothie",
       name: "Smothie",
-      imgUrl: "./images/Smothie.png",
+      imgUrl: "./images/cold.png",
       pageNum: 7,
     },
     {
       group: "Yogurt",
       name: "Yogurt",
-      imgUrl: "./images/Yogurt.png",
+      imgUrl: "./images/drinks.png",
       pageNum: 8,
     },
     {
@@ -77,25 +82,25 @@ async function getData() {
     {
       group: "Iced Frappe",
       name: "Iced Frappe",
-      imgUrl: "./images/Iced Frappe.png",
+      imgUrl: "./images/drinks.png",
       pageNum: 10,
     },
     {
       group: "Iced Coffe",
       name: "Iced Coffe",
-      imgUrl: "./images/Iced Coffe.png",
+      imgUrl: "./images/drinks.png",
       pageNum: 11,
     },
     {
       group: "Iced Frappaccino",
       name: "Iced Frappaccino",
-      imgUrl: "./images/Iced Frappe.png",
+      imgUrl: "./images/drinks.png",
       pageNum: 12,
     },
     {
       group: "Madnes",
       name: "Madnes",
-      imgUrl: "./images/Madnes.png",
+      imgUrl: "./images/drinks.png",
       pageNum: 13,
     },
     {
@@ -125,7 +130,7 @@ async function getData() {
     {
       group: "Om Ali",
       name: "Om Ali",
-      imgUrl: "./images/om Ali.png",
+      imgUrl: "./images/drinks.png",
       pageNum: 18,
     },
     {
@@ -231,16 +236,22 @@ async function getData() {
 </div>`;
 
   document.getElementById("test").innerHTML = htmlTagsContainer + socialMedia;
-  let swiper = new Swiper(".Slider-container", {
-    effect: "flip",
-    grabCursor: true,
-    centerdSlides: true,
-    loop: false,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+
+  if (typeof Swiper !== "undefined") {
+    // Check if Swiper is defined
+    let swiper = new Swiper(".Slider-container", {
+      effect: "flip",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  } else {
+    console.warn("Swiper library not found");
+  }
   // swiper.changeDirection('vertical');
 }
 
