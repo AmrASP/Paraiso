@@ -1,6 +1,6 @@
 async function fetchData() {
   try {
-    const req = await fetch("../data/coffeeData.json");
+    const req = await fetch("../data/dessert.json");
     const res = await req.json();
     return res;
   } catch (error) {
@@ -17,133 +17,54 @@ async function getData() {
     return;
   }
 
-    const categories = [
-    {
-      group: "Espresso",
-      name: "Espresso",
-      imgUrl: "",
-      pageNum: 1,
-    },
-
-    {
-      group: "Hot Coffe",
-      name: "Hot Coffe",
-      imgUrl: "./images/Hot Coffe.png",
-      pageNum: 2,
-    },
-    {
-      group: "Hot Drink's",
-      name: "Hot Drink's",
-      imgUrl: "",
-      pageNum: 3,
-    },
-    {
-      group: " Juice Cocktail ",
-      name: "Juice Cocktail",
-      imgUrl: "./images/Juice Cocktail.png",
-      pageNum: 4,
-    },
-    {
-      group: "Fresh Juice",
-      name: "Fresh Juice",
-      imgUrl: "./images/cold.png",
-      pageNum: 5,
-    },
-    {
-      group: "Mix Fresh",
-      name: "Mix Fresh",
-      imgUrl: "./images/drinks.png",
-      pageNum: 6,
-    },
-    {
-      group: "Smothie",
-      name: "Smothie",
-      imgUrl: "./images/Smothie.png",
-      pageNum: 7,
-    },
-    {
-      group: "Yogurt",
-      name: "Yogurt",
-      imgUrl: "./images/Yogurt.png",
-      pageNum: 8,
-    },
-    {
-      group: "Milk Shake ",
-      name: "Milk Shake ",
-      imgUrl: "./images/Milk Shake.png",
-      pageNum: 9,
-    },
-    {
-      group: "Cocktails Soda",
-      name: "Cocktails Soda",
-      imgUrl: "./images/drinks.png",
-      pageNum: 10,
-    },
-    {
-      group: "Iced Frappe",
-      name: "Iced Frappe",
-      imgUrl: "./images/Iced Frappe.png",
-      pageNum: 10,
-    },
-    {
-      group: "Iced Coffe",
-      name: "Iced Coffe",
-      imgUrl: "./images/Iced Coffe.png",
-      pageNum: 11,
-    },
-    {
-      group: "Iced Frappaccino",
-      name: "Iced Frappaccino",
-      imgUrl: "./images/Iced Frappe.png",
-      pageNum: 12,
-    },
+  const categories = [
     {
       group: "Madnes",
       name: "Madnes",
       imgUrl: "./images/Madnes.png",
-      pageNum: 13,
+      pageNum: 1,
     },
     {
       group: "Fruite Salad",
       name: "Fruite Salad",
       imgUrl: "./images/fruit salad.png",
-      pageNum: 14,
+      pageNum: 2,
     },
     {
       group: "Waffel's",
       name: "Waffel's",
       imgUrl: "./images/waffel.png",
-      pageNum: 15,
+      pageNum: 3,
     },
     {
       group: "Pan Cake",
       name: "Pan Cake",
       imgUrl: "./images/pan cacke.png",
-      pageNum: 16,
+      pageNum: 4,
     },
     {
       group: "Dessert",
       name: "Dessert",
       imgUrl: "./images/Dessert.png",
-      pageNum: 17,
+      pageNum: 5,
     },
     {
       group: "Om Ali",
       name: "Om Ali",
       imgUrl: "./images/om Ali.png",
-      pageNum: 18,
+      pageNum: 6,
     },
     {
       group: "Ice Cream",
       name: "Ice Cream",
       imgUrl: "./images/iceCreem.png",
-      pageNum: 19,
+      pageNum: 7,
     },
     {
       group: "Additions",
       name: "Additions",
       imgUrl: "./images/drinks.png",
-      pageNum: 20,
+      pageNum: 8,
     },
   ];
 
