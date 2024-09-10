@@ -167,7 +167,6 @@ async function getData() {
       prevEl: ".swiper-button-prev",
     },
   });
-  // swiper.changeDirection('vertical');
 }
 
 getData();

@@ -74,6 +74,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -99,11 +100,8 @@ ul {
   width: 20%;
 }
 
-.home .linksBotton > a:first-child {
-  background-image: linear-gradient(50deg, #6dad86 10%, #385a2a 100%);
-}
 
-.home .linksBotton > a:last-child {
+.home .linksBotton > a{
   background-image: linear-gradient(200deg, #6dad86 10%, #385a2a 100%);
 }
 
