@@ -65,7 +65,7 @@ async function getData() {
       name: "Additions",
       imgUrl: "./images/drinks.png",
       pageNum: 8,
-    },
+    }
   ];
 
   let htmlTagsContainer = "";
