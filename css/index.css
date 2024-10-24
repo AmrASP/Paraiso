@@ -158,7 +158,6 @@ ul {
 @media (max-width: 1200px) {
   .home .container {
     margin-top: 20px;
-    height: 90vh;
   }
   .home .container .overLay .title h1 {
     font-size: 100px;
@@ -175,7 +174,9 @@ ul {
     font-size: 60px;
     margin: 20px 0px;
   }
-
+  .home .container {
+    height: 90vh;
+  }
   .home .container .overLay .title h3 {
     font-size: 30px;
   }
